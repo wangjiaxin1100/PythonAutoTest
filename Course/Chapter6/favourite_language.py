@@ -45,3 +45,18 @@ for lanague in favourite_lanagues.values():
 # set()方法调用
 for lanague in set(favourite_lanagues.values()):
     print(lanague.title())
+
+
+favourite_lanagues.update({'Kate':'Java','Saven':'C++','Daniel':'Cyuyan','Mary':'Jenkins','Polo':'PHP'})
+
+for name,lanague in favourite_lanagues.items():
+    print(name.title() +"'s favorite language is "+
+          lanague.title() + ".")
+
+lists = {'Peter':'1','Mary':'0',"Kate":'1','Mike':'0'}
+for name ,value in lists.items():
+    # print(value)
+    if value == '1':
+        print(name.title()+",Thank you!")
+    else:
+        print(name.title()+",Please participate in the reserch")
